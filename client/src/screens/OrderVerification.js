@@ -192,91 +192,120 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    backgroundColor: '#fff',
+    backgroundColor: '#FAF3E1', // Brand light bg
     width: '100%',
   },
   errorBg: {
-      backgroundColor: '#fee',
+      backgroundColor: 'rgba(250, 129, 18, 0.1)', // Light brand orange
   },
   successBg: {
-      backgroundColor: '#efe',
+      backgroundColor: 'rgba(100, 200, 100, 0.1)',
   },
   title: {
-    fontSize: 24,
-    fontWeight: 'bold',
+    fontSize: 26,
+    fontWeight: '900',
     marginBottom: 20,
     textAlign: 'center',
+    color: '#222222',
+    letterSpacing: 1,
   },
   feedback: {
-    padding: 10,
-    marginBottom: 10,
-    borderRadius: 5,
+    padding: 15,
+    marginBottom: 15,
+    borderRadius: 8,
     alignItems: 'center',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.1,
+    shadowRadius: 2,
+    elevation: 2,
   },
   feedbackError: {
-    backgroundColor: 'red',
+    backgroundColor: '#FA8112', // Brand Orange for errors
   },
   feedbackSuccess: {
-    backgroundColor: 'green',
+    backgroundColor: '#222222', // Brand dark for success
   },
   feedbackText: {
-    color: 'white',
+    color: '#FAF3E1',
     fontWeight: 'bold',
-    fontSize: 16,
+    fontSize: 18,
+    letterSpacing: 0.5,
   },
   itemRow: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    padding: 15,
+    padding: 18,
     borderBottomWidth: 1,
-    borderBottomColor: '#eee',
+    borderBottomColor: '#F5E7C6',
+    backgroundColor: '#fff',
+    borderRadius: 8,
+    marginBottom: 8,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.05,
+    shadowRadius: 1,
+    elevation: 1,
   },
   itemDone: {
-    backgroundColor: '#e0ffe0',
-    opacity: 0.6,
+    backgroundColor: '#F5E7C6', // Brand beige for done
+    borderBottomColor: 'transparent',
   },
   itemPending: {
-      backgroundColor: '#fff0f0',
+      backgroundColor: '#fff',
   },
   itemName: {
-    fontSize: 16,
+    fontSize: 18,
     flex: 1,
+    color: '#222222',
+    fontWeight: '600',
   },
   itemQty: {
-    fontSize: 16,
+    fontSize: 20,
     fontWeight: 'bold',
+    color: '#222222',
   },
   giftRow: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    padding: 15,
+    padding: 18,
     marginTop: 10,
     borderWidth: 2,
-    borderColor: '#orange',
-    borderRadius: 5,
+    borderColor: '#FA8112', // Brand Orange
+    borderRadius: 8,
+    backgroundColor: '#fff',
   },
   footer: {
       marginTop: 20,
+      gap: 10, // RN 0.71+ supports gap
   },
   button: {
-    padding: 15,
-    borderRadius: 5,
+    padding: 18,
+    borderRadius: 10,
     alignItems: 'center',
-    marginBottom: 10,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 3,
+    elevation: 3,
+    marginBottom: 10, // Fallback if gap isn't supported in all RN Web versions
   },
   buttonActive: {
-    backgroundColor: '#007bff',
+    backgroundColor: '#FA8112', // Brand Orange
   },
   buttonDisabled: {
-    backgroundColor: '#ccc',
+    backgroundColor: '#F5E7C6',
+    shadowOpacity: 0,
+    elevation: 0,
   },
   cancelButton: {
-      backgroundColor: '#666',
+      backgroundColor: '#222222', // Brand Dark
   },
   buttonText: {
-    color: 'white',
+    color: '#FAF3E1',
     fontWeight: 'bold',
-    fontSize: 16,
+    fontSize: 18,
+    letterSpacing: 1,
   },
 });
 

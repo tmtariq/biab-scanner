@@ -31,51 +31,52 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: 'rgba(255, 0, 0, 0.8)', // Red overlay as per spec
+    backgroundColor: 'rgba(250, 129, 18, 0.85)', // Using brand orange/red for overlay
   },
   modalView: {
     margin: 20,
-    backgroundColor: 'white',
-    borderRadius: 20,
+    backgroundColor: '#FAF3E1', // Match new app background
+    borderRadius: 15,
     padding: 35,
     alignItems: 'center',
     shadowColor: '#000',
-    shadowOffset: {
-      width: 0,
-      height: 2,
-    },
-    shadowOpacity: 0.25,
-    shadowRadius: 4,
-    elevation: 5,
-    width: '80%',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.3,
+    shadowRadius: 5,
+    elevation: 8,
+    width: '85%',
   },
   button: {
-    borderRadius: 10,
-    padding: 15,
+    borderRadius: 8,
+    paddingVertical: 15,
+    paddingHorizontal: 30,
     elevation: 2,
-    marginTop: 20,
-    minWidth: 150,
+    marginTop: 25,
+    minWidth: 160,
   },
   buttonClose: {
-    backgroundColor: '#d9534f', // Red-ish button
+    backgroundColor: '#222222', // Brand dark color
   },
   textStyle: {
-    color: 'white',
+    color: '#FAF3E1',
     fontWeight: 'bold',
     textAlign: 'center',
     fontSize: 18,
+    letterSpacing: 1,
   },
   modalTitle: {
-      fontSize: 30,
-      fontWeight: 'bold',
-      color: '#d9534f',
+      fontSize: 32,
+      fontWeight: '900',
+      color: '#FA8112', // Brand Orange
       marginBottom: 15,
+      letterSpacing: 2,
   },
   modalText: {
-    marginBottom: 15,
+    marginBottom: 20,
     textAlign: 'center',
-    fontSize: 20,
-    fontWeight: 'bold',
+    fontSize: 22,
+    fontWeight: '700',
+    color: '#222222', // Brand dark
   },
 });
 
